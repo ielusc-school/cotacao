@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 const convert = require('./lib/convert');
 
-app.set('view', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('public', path.join(__dirname, 'public'));
 
 app.set('view engine', 'ejs');
